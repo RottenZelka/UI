@@ -21,13 +21,25 @@
         });
 
         document.addEventListener("DOMContentLoaded", function () {
-            const productContainer = document.querySelector(".bundle-products-container");
-            const productCount = productContainer.children.length;
+            const container = document.querySelector(".bundle-products-container");
+            const items = container.querySelectorAll(".product-item");
+            
+            function adjustProductLayout() {
+                const itemCount = items.length;
+                container.classList.remove("one-item", "two-items");
 
-            if (productCount === 5) {
-                productContainer.classList.add("five-items");
+                if (itemCount % 3 === 1) {
+                    container.classList.add("one-item");
+                } else if (itemCount % 3 === 2) {
+                    container.classList.add("two-items");
+                }
             }
+            
+            // Run on load and on window resize for responsiveness
+            adjustProductLayout();
+            window.addEventListener('resize', adjustProductLayout);
         });
+
 
     </script>               
 </head>
@@ -225,9 +237,334 @@
                         </div>
                     </div>
                 </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="title">
+                <a>NEПРОМО ПАКЕТИ</a>
+            </div>
+            <div class="bundle-products-container">
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="title">
+                <a>neПРОМО ПАКЕТИ</a>
+            </div>
+            <div class="bundle-products-container">
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-product">
+                    <a href="#">
+                        <div class="one-product-image" style="background: url(http://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg); background-size: cover;">
+                            <span class="discount-tag-bg">
+                                <span class="discount-tag">-20%</span>
+                            </span>
+                        </div>
+                        <div class="one-product-info">
+                            <h3>DREAM HAIR</h3>
+                            <p>Трансформирайте косата си натуралнo</p>
+                        </div>
+                    </a>
+                    <div class="prices">
+                        <span>83,20 лв.</span>
+                        <span class="regular-price">104,00 лв.</span>
+                        <p id="lowest_price_3800501636671" class="lowest_price">
+                            <span>
+                                <img src="https://cocosolis.com/wp-content/uploads/icon-info.svg">
+                            </span>
+                            Най-ниска цена за последните 30 дни: 104,00лв.        
+                        </p>
+                        <div class="add-button">
+                            <button>ДОБАВИ</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <div class="donation-banner">
+        <div class="donation-logos">
+          <img
+            src="https://cocosolis.com/wp-content/uploads/SOS_logo-BG.svg"
+            alt="SOS Logo"
+          />
+          <img
+            src="https://cocosolis.com/wp-content/uploads/cocosolis-sos-gold-partners-2023.svg"
+            alt="Gold Partner Logo"
+          />
+        </div>
+        <div class="">
+            COCOSOLIS дарява по 1лв. от всяко закупен продукт на SOS детски селища.
+        </div>
+    </div>
+      
+    <footer class="footer">
+        <div class="footer-secure-payment">
+          <p>Гарантирано сигурно плащане с:</p>
+          <div class="payment-icons">
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-visa.svg"
+              alt="Visa"
+              class="payment-icon"
+            />
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-mastercard.svg"
+              alt="Mastercard"
+              class="payment-icon"
+            />
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-discover.svg"
+              alt="Discover"
+              class="payment-icon"
+            />
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-paypal.svg"
+              alt="Paypal"
+              class="payment-icon"
+            />
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-amex.svg"
+              alt="Amex"
+              class="payment-icon"
+            />
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-gpay.svg"
+              alt="Google Pay"
+              class="payment-icon"
+            />
+            <img
+              src="https://cocosolis.com//wp-content/uploads/icon-payments-apple-pay.svg"
+              alt="Apple Pay"
+              class="payment-icon"
+            />
+          </div>
+        </div>
+      
+        <div class="footer-main-content">
+          <div class="footer-links">
+            <h3>Полезни връзки</h3>
+            <ul>
+              <li><a href="#">Продукти</a></li>
+              <li><a href="#">CLUB</a></li>
+              <li><a href="#">Контакти</a></li>
+              <li><a href="#">За нас</a></li>
+              <li><a href="#">Правила за закупуване</a></li>
+              <li><a href="#">Условия за ползване на сайта</a></li>
+              <li><a href="#">Условия на Програма за лоялност</a></li>
+              <li><a href="#">Политика за бисквитки</a></li>
+              <li><a href="#">Политика за връщане</a></li>
+              <li><a href="#">Поръчка и доставка</a></li>
+              <li><a href="#">Политика за защита на лични данни</a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>      
 </body>
 </html>
